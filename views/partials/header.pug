@@ -23,8 +23,12 @@
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item">
         <a class="nav-link" href="/shopping-cart/">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart 
-          span.badge.badge-pill.badge-secondary
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+        - var qty = totalQty
+        if (qty == 0)
+          span.badge.badge-pill.badge-secondary 0
+        else
+          span.badge.badge-pill.badge-secondary #{session.cart.totalQty}
         </a>
       </li>
       <li class="nav-item dropdown">

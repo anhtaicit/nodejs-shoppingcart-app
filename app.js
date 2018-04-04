@@ -16,7 +16,8 @@ var userRoutes = require('./routes/user');
 
 var app = express();
 
-mongoose.connect('localhost:27017/shopping');
+//mongoose.connect('localhost:27017/shopping');
+mongoose.connect('mongodb://tai:abcd1234@ds259105.mlab.com:59105/tai-shopping');
 require('./config/passport');
 
 // view engine setup
